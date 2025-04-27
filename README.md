@@ -1,139 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>La Sirène Cookie Shop</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6eb;
             margin: 0;
             padding: 0;
         }
-
         header {
-            background-color: #f8c8d4;
-            color: #fff;
+            background-color: #f8c6d8;
             text-align: center;
-            padding: 20px 0;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
             padding: 20px;
         }
-
-        .product {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        header img {
+            width: 200px;
+        }
+        h1 {
+            color: #d63384;
+        }
+        p {
+            text-align: center;
+            color: #555;
+            font-size: 18px;
             margin: 20px;
-            overflow: hidden;
-            width: 280px;
         }
-
-        .product img {
-            width: 100%;
-            height: auto;
-            border-bottom: 2px solid #f8c8d4;
-        }
-
-        .product-info {
-            padding: 15px;
+        .section {
+            padding: 20px;
             text-align: center;
         }
-
-        .product-info h2 {
-            color: #f8c8d4;
-            font-size: 1.8em;
+        ol, ul {
+            text-align: left;
+            display: inline-block;
+            margin: 20px auto;
         }
-
-        .product-info p {
-            font-size: 1.1em;
-            margin: 10px 0;
+        img.cookie-img {
+            width: 250px;
+            margin-top: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
         }
-
-        .product-info .price {
-            font-size: 1.5em;
-            color: #ff6f61;
-            margin-bottom: 15px;
+        img.cookie-img:hover {
+            transform: scale(1.05);
         }
-
-        .order-btn {
-            background-color: #ff6f61;
-            color: white;
-            padding: 10px;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-            transition: background-color 0.3s;
-        }
-
-        .order-btn:hover {
-            background-color: #e45c53;
-        }
-
-        footer {
-            background-color: #f8c8d4;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: white;
+        a {
+            color: #d63384;
             text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: 30px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b0246d;
+        }
+        footer {
+            background-color: #f8c6d8;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #d63384;
+            margin: 20px auto;
+            width: 80%;
+        }
+        span {
+            color: #d63384;
+            font-weight: bold;
+        }
+        /* Nouveau bouton commander */
+        .order-button {
+            display: inline-block;
+            background-color: #d63384;
+            color: white;
+            padding: 12px 20px;
+            margin: 20px 0;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+        .order-button:hover {
+            background-color: #b0246d;
+            transform: scale(1.05);
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header img {
+                width: 150px;
+            }
+            .contact-form, ol, ul {
+                width: 90%;
+            }
+            .cookie-img {
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>La Sirène Cookie Shop</h1>
-        <p>Your one-stop shop for delightful cookies, cupcakes, and chocolate treats!</p>
+        <img src="New design logo la sirene (5).png" alt="La Sirène Cookie Shop">
     </header>
 
-    <div class="container">
-        <div class="product">
-            <img src="https://yourimageurl.com/sweetheart-bliss.jpg" alt="Sweetheart Bliss">
-            <div class="product-info">
-                <h2>Sweetheart Bliss</h2>
-                <p>Fresh strawberries dipped in rich chocolate.</p>
-                <div class="price">$15.99</div>
-                <button class="order-btn">Order Now</button>
-            </div>
-        </div>
+    <p>Bienvenue chez <span>La Sirène Cookie Shop</span> ! Les cookies les plus délicieux de Sousse 🍪✨</p>
 
-        <div class="product">
-            <img src="https://yourimageurl.com/choco-berry-delight.jpg" alt="Choco-Berry Delight">
-            <div class="product-info">
-                <h2>Choco-Berry Delight</h2>
-                <p>Strawberries and chocolate-filled cookies in one sweet bundle!</p>
-                <div class="price">$18.99</div>
-                <button class="order-btn">Order Now</button>
-            </div>
-        </div>
+    <hr>
 
-        <!-- Add more products as needed -->
+    <div class="section">
+        <h1>Nos Délices</h1>
+        <ol>
+            <li>Cookies au chocolat</li>
+            <li>Cookies aux fraises</li>
+            <li>Cookies spéciaux Sirène</li>
+        </ol>
+
+        <h2>Autres Gourmandises</h2>
+        <ul>
+            <li>Boules de chocolat</li>
+            <li>Mini cupcakes</li>
+            <li>Fraises enrobées</li>
+        </ul>
+
+        <img src="https://via.placeholder.com/250" alt="Cookies délicieux" class="cookie-img">
+
+        <br>
+
+        <a href="https://www.instagram.com/la.sirene.cookie.shop" class="order-button" target="_blank">Commander Maintenant</a>
+
+        <p><a href="https://www.instagram.com/la.sirene.cookie.shop" target="_blank">Découvrez notre Instagram !</a></p>
+    </div>
+
+    <hr>
+
+    <div class="contact-form">
+        <h2>Contactez-Nous</h2>
+        <form action="#" method="post">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <button type="submit">Envoyer</button>
+        </form>
     </div>
 
     <footer>
-        <p>La Sirène Cookie Shop | <a href="mailto:syrinetouati25@gmail.com">Contact Us</a></p>
+        © 2025 La Sirène Cookie Shop | Cité Taamir, Sousse | 📞 22 065 148
     </footer>
+
 </body>
 </html>
-![La Sirene Cookie Shop](https://github.com/user-attachments/assets/53c440e3-45c5-4f7a-ba00-c7b0eac858f1)
+**
